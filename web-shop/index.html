@@ -5,19 +5,135 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pocetna</title>
         <script src="/js/javascript.js"></script>
+        <style>
+            section,
+            article,
+            div,
+            aside {
+                border: 1px solid black;
+            }
+            .dobrodosli {
+                background-image: url(images/Placeholder.png);
+            }
+            img {
+                width: 200px;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <iframe src="partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+            <iframe
+                src="partials/header.html"
+                width="100%"
+                class="auto-height-iframe"
+            ></iframe>
         </header>
         <main>
-            <section>
-                <article></article>
+            <section class="dobrodosli">
+                <h1>Dobrodosli!</h1>
+            </section>
+            <section class="proizvodi">
+                <h1>Popularni proizvodi</h1>
+                <!-- 
+                <article class="kartica-proizvoda">
+                    <img src="images/Placeholder.png" alt="lajna za psa" />
+                    <h3>Lajna za psa</h3>
+                    <h4>20 €</h4>
+                    <p><a href="">Detalji proizvoda...</a></p>
+                    <button>Dodaj u kosaricu</button>
+                </article>
+                <article class="kartica-proizvoda">
+                    <img src="images/Placeholder.png" alt="pijeska za macku" />
+                    <h3>Pijesak za macku</h3>
+                    <h4>30 €</h4>
+                    <p><a href="">Detalji proizvoda...</a></p>
+                    <button>Dodaj u kosaricu</button>
+                </article>
+                <article class="kartica-proizvoda">
+                    <img src="images/Placeholder.png" alt="akvarij za ribicu" />
+                    <h3>Akvarij za ribicu</h3>
+                    <h4>50 €</h4>
+                    <p><a href="">Detalji proizvoda...</a></p>
+                    <button>Dodaj u kosaricu</button>
+                </article>
+                -->
+                <iframe
+                    src="partials/productCard.html"
+                    width="100%"
+                    class="auto-height-iframe"
+                ></iframe>
+                <iframe
+                    src="partials/productCard.html"
+                    width="100%"
+                    class="auto-height-iframe"
+                ></iframe>
+                <iframe
+                    src="partials/productCard.html"
+                    width="100%"
+                    class="auto-height-iframe"
+                ></iframe>
+            </section>
+            <section class="kategorije">
+                <h1>Kategorije</h1>
+                <article class="kartica psi">
+                    <img src="images/Placeholder.png" alt="psi" />
+                    <h3><a href="products.html">Psi</a></h3>
+                </article>
+                <article class="kartica macke">
+                    <img src="images/Placeholder.png" alt="macke" />
+                    <h3><a href="products.html">Macke</a></h3>
+                </article>
+                <article class="kartica ribice">
+                    <img src="images/Placeholder.png" alt="ribice" />
+                    <h3><a href="products.html">Ribice</a></h3>
+                </article>
+            </section>
+            <section class="blog">
+                <h1>Blog</h1>
+                <iframe
+                    src="/partials/blogCard2.html"
+                    width="100%"
+                    class="auto-height-iframe"
+                ></iframe>
+            </section>
+            <section class="newsletter">
+                <h1>Newsletter</h1>
+                <h3>Pretplati se na novosti i akcije!</h3>
+                <form action="">
+                    <p>
+                        <input
+                            type="email"
+                            name="email"
+                            id=""
+                            placeholder="Upisite svoj mail"
+                            required
+                        />
+                    </p>
+                    <p>
+                        <input type="checkbox" name="privola" id="" required />
+                        <label for="privola"
+                            >Prihvacam prikupljanje i obradu osobnih podataka
+                            danih u obrascu bez kojih moj zahtjev ne moze biti
+                            ispunjen, te da me Pet Shop kontaktira u svrhu
+                            slanja obavijesti</label
+                        >
+                    </p>
+                    <p>
+                        <input type="checkbox" name="prijava" id="" />
+                        <label for="prijava">Prijavi se na newsletter</label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Pretplati se" />
+                    </p>
+                </form>
             </section>
         </main>
-        <aside></aside>
         <footer>
-            <iframe src="partials/footer.html" width="100%" class="auto-height-iframe"></iframe>
+            <iframe
+                src="partials/footer.html"
+                width="100%"
+                class="auto-height-iframe"
+            ></iframe>
         </footer>
     </body>
 </html>

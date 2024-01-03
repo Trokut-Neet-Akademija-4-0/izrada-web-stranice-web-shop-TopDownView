@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kosarica</title>
+        <script src="/js/javascript.js"></script>
+        <style>
+            section,
+            article,
+            div,
+            aside {
+                border: 1px solid black;
+            }
+            img {
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <iframe
+                src="partials/header.html"
+                width="100%"
+                class="auto-height-iframe"
+            ></iframe>
+        </header>
+        <main>
+            <section class="kosarica">
+            <h1>Kosarica</h1>
+                <iframe
+                    src="/partials/productCard2.html"
+                    width="100%"
+                    class="auto-height-iframe"
+                ></iframe>
+                <iframe
+                    src="/partials/productCard2.html"
+                    width="100%"
+                    class="auto-height-iframe"
+                ></iframe>
+            </section>
+            <section class="finalno">
+                <h3>Ukupno: 00 €</h3>
+                <a href="checkout.html" target="_parent"><button>Checkout</button></a>
+            </section>
+        </main>
+        <footer>
+            <iframe
+                src="partials/footer.html"
+                width="100%"
+                class="auto-height-iframe"
+            ></iframe>
+        </footer>
+    </body>
+</html>
