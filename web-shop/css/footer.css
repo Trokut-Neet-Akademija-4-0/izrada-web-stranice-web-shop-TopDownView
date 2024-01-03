@@ -1,0 +1,54 @@
+object {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+    padding: 1em;
+    margin: 0;
+}
+iframe {
+    height: 90px;
+}
+@media screen and (max-width: 1000px) {
+    .mapa-weba {
+        grid-area: a;
+    }
+    .kontakt-info {
+        grid-area: b;
+    }
+    .google-mapa {
+        grid-area: c;
+    }
+    .uvjeti-i-pravila {
+        grid-area: d;
+    }
+    .potpis {
+        grid-area: e;
+    }
+    object {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e e";
+    }
+    iframe {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .mapa-weba,
+    .kontakt-info,
+    .google-mapa,
+    .uvjeti-i-pravila {
+        display: none;
+    }
+    object {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
