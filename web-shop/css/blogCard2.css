@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+article {
+    display: flex;
+    flex-direction: row;
+}
+.lijevo, .desno {
+    width: 50%;
+}
+.lijevo {
+    padding: 1em;
+}
+.desno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+img {
+    width: 100%;
+}
+@media screen and (max-width: 500px) {
+    .desno {
+        display: none;
+    }
+    .lijevo {
+        width: 100%;
+    }
+}

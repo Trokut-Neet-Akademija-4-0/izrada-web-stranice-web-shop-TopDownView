@@ -8,9 +8,39 @@
     justify-content: center;
     align-items: center;
 }
-.proizvodi .galerija {
+.proizvodi,
+.kategorije,
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proizvodi .galerija,
+.kategorije .galerija {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
-.proizvodi .galerija iframe {
+.proizvodi .galerija iframe,
+.kategorije .galerija iframe {
+    width: 25%;
+    flex: 0 0 auto;
+}
+@media screen and (max-width: 1000px) {
+    .proizvodi .galerija iframe,
+    .kategorije .galerija iframe {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .proizvodi .galerija iframe,
+    .kategorije .galerija iframe {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+    .proizvodi .galerija iframe:last-of-type,
+    .kategorije .galerija iframe:last-of-type {
+        display: none;
+    }
 }
