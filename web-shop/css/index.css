@@ -1,0 +1,16 @@
+.dobrodosli {
+    height: 50vh;
+    background-image: url(../images/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.proizvodi .galerija {
+    display: flex;
+    flex-direction: row;
+}
+.proizvodi .galerija iframe {
+}
