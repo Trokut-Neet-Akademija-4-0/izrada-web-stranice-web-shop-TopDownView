@@ -1,0 +1,36 @@
+.sadrzaj {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.proizvodi {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.galerija {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.galerija iframe {
+    width: 33.3333%;
+    flex: 0 0 auto;
+}
+@media screen and (max-width: 1000px) {
+    .proizvodi {
+        width: 70vw;
+    }
+    .galerija iframe {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    aside {
+        display: none;
+    }
+    .proizvodi {
+        width: 100vw;
+    }
+}
