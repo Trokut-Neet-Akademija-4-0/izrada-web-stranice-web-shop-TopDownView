@@ -1,0 +1,41 @@
+.proizvod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proizvod .sadrzaj {
+    display: flex;
+    flex-direction: row;
+}
+.slika img {
+    width: 100%;
+}
+.galerija {
+    display: flex;
+    flex-direction: row;
+}
+.galerija img {
+    width: 100%;
+}
+.proizvod .opis,
+.cijena-i-kupnja {
+    padding: 1em;
+}
+.recenzije {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recenzije .sadrzaj {
+    display: flex;
+    flex-direction: row;
+}
+.recenzije .sadrzaj .lijevo {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 1em;
+}
+.recenzije .sadrzaj .desno {
+    padding: 1em;
+}
