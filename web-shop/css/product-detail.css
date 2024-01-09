@@ -21,6 +21,9 @@
 .cijena-i-kupnja {
     padding: 1em;
 }
+.recenzije img {
+    width: 1em;
+}
 .recenzije {
     display: flex;
     flex-direction: column;
