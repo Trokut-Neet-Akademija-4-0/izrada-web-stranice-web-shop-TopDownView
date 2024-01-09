@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Checkout</title>
         <script src="/js/javascript.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/checkout.css">
         <style>
             section,
             div,
@@ -24,58 +26,115 @@
         <main>
             <section class="checkout">
                 <h1>Checkout</h1>
-                <div class="proizvodi">
-                    <h2>Proizvodi</h2>
-                    <p>Proizvod <b>00 €</b></p>
-                    <p>Proizvod <b>00 €</b></p>
-                    <hr />
-                    <h3>Ukupno: 00 €</h3>
+                <div class="sadrzaj">
+                    <div class="proizvodi">
+                        <h2>Proizvodi</h2>
+                        <p>Proizvod <b>00 €</b></p>
+                        <p>Proizvod <b>00 €</b></p>
+                        <hr />
+                        <h3>Ukupno: 00 €</h3>
+                    </div>
+                    <form action="">
+                        <div class="osobni-podaci">
+                            <h2>Osobni podaci</h2>
+                            <p>
+                                <input
+                                    type="text"
+                                    name="ime"
+                                    placeholder="Ime"
+                                    required
+                                />
+                            </p>
+                            <p>
+                                <input
+                                    type="text"
+                                    name="prezime"
+                                    placeholder="Prezime"
+                                    required
+                                />
+                            </p>
+                            <p>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id=""
+                                    placeholder="Email"
+                                    required
+                                />
+                            </p>
+                            <p>
+                                <input
+                                    type="tel"
+                                    name="mobitel"
+                                    placeholder="Mobitel"
+                                    required
+                                />
+                            </p>
+                        </div>
+                        <div class="adresa">
+                            <h2>Adresa</h2>
+                            <p>
+                                <input
+                                    type="text"
+                                    name="drzava"
+                                    placeholder="Drzava"
+                                    required
+                                />
+                            </p>
+                            <p>
+                                <input
+                                    type="text"
+                                    name="grad"
+                                    placeholder="Grad"
+                                    required
+                                />
+                            </p>
+                            <p>
+                                <input
+                                    type="text"
+                                    name="adresa"
+                                    placeholder="Adresa"
+                                    required
+                                />
+                            </p>
+                        </div>
+                        <div class="placanje">
+                            <h2>Placanje</h2>
+                            <p>
+                                <input
+                                    type="number"
+                                    name="broj-kartice"
+                                    placeholder="Broj kartice"
+                                    required
+                                />
+                            </p>
+                        </div>
+                        <div class="privola-i-prijava">
+                            <p>
+                                <input
+                                    type="checkbox"
+                                    name="privola"
+                                    id=""
+                                    required
+                                />
+                                <label for="privola"
+                                    >Prihvacam prikupljanje i obradu osobnih
+                                    podataka danih u obrascu bez kojih moj
+                                    zahtjev ne moze biti ispunjen, te da me Pet
+                                    Shop kontaktira u svrhu slanja
+                                    obavijesti</label
+                                >
+                            </p>
+                            <p>
+                                <input type="checkbox" name="prijava" id="" />
+                                <label for="prijava"
+                                    >Prijavi se na newsletter</label
+                                >
+                            </p>
+                        </div>
+                        <input type="submit" value="Plati" />
+                    </form>
                 </div>
-                <form action="">
-                    <div class="osobni-podaci">
-                        <h2>Osobni podaci</h2>
-                        <input type="text" name="ime" placeholder="Ime" required />
-                        <input type="text" name="prezime" placeholder="Prezime" required />
-                        <br />
-                        <input
-                            type="email"
-                            name="email"
-                            id=""
-                            placeholder="Email"
-                            required
-                        />
-                        <input type="tel" name="mobitel" placeholder="Mobitel" required />
-                    </div>
-                    <div class="adresa">
-                        <h2>Adresa</h2>
-                        <input type="text" name="drzava" placeholder="Drzava" required />
-                        <input type="text" name="grad" placeholder="Grad" required />
-                        <br />
-                        <input type="text" name="adresa" placeholder="Adresa" required />
-                    </div>
-                    <div class="placanje">
-                        <h2>Placanje</h2>
-                        <input
-                            type="number"
-                            name="broj-kartice"
-                            placeholder="Broj kartice"
-                            required
-                        />
-                    </div>
-                    <div class="privola-i-prijava">
-                        <input type="checkbox" name="privola" id="" required />
-                        <label for="privola"
-                            >Prihvacam prikupljanje i obradu osobnih podataka
-                            danih u obrascu bez kojih moj zahtjev ne moze biti
-                            ispunjen, te da me Pet Shop kontaktira u svrhu
-                            slanja obavijesti</label
-                        >
-                        <br />
-                        <input type="checkbox" name="prijava" id="" />
-                        <label for="prijava">Prijavi se na newsletter</label>
-                    </div>
-                    <input type="submit" value="Plati" />
-                </form>
             </section>
         </main>
         <footer>
