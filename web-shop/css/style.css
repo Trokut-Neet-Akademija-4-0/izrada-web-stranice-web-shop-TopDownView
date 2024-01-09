@@ -1,3 +1,13 @@
+/* Privremeni borderi */
+body,
+section,
+article,
+div,
+aside,
+form {
+    border: 1px solid black;
+}
+
 * {
     box-sizing: border-box;
 }

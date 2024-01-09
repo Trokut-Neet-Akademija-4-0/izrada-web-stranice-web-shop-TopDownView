@@ -1,10 +1,15 @@
-.prvi-red, .drugi-red {
+img {
+    width: 2em;
+}
+.prvi-red,
+.drugi-red {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 3em;
 }
-.prvi-red div, .drugi-red div {
+.prvi-red div,
+.drugi-red div {
     display: flex;
     flex-direction: row;
     align-items: center;
