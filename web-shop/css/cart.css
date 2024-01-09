@@ -1,0 +1,11 @@
+.kosarica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sadrzaj {
+    width: 100vw;
+}
+.finalno {
+    padding: 1em;
+}
