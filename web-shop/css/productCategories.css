@@ -1,0 +1,26 @@
+.kategorije {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kategorije .galerija {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.kategorije .galerija iframe {
+    width: 25%;
+    flex: 0 0 auto;
+}
+@media screen and (max-width: 1000px) {
+    .kategorije .galerija iframe {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .kategorije .galerija iframe {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+}
