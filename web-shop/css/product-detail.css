@@ -33,9 +33,20 @@
 .recenzije .sadrzaj .lijevo {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 30vw;
     padding: 1em;
 }
 .recenzije .sadrzaj .desno {
     padding: 1em;
+    width: 70vw;
+}
+@media screen and (max-width: 500px) {
+    .proizvod .sadrzaj,
+    .recenzije .sadrzaj {
+        flex-direction: column;
+    }
+    .recenzije .sadrzaj .lijevo,
+    .recenzije .sadrzaj .desno {
+        width: 100vw;
+    }
 }
