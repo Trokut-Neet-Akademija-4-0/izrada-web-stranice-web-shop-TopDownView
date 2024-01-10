@@ -52,6 +52,10 @@ header {
     position: sticky;
     top: 0;
 }
+aside iframe {
+    position: sticky;
+    top: calc(104px + 2em);
+}
 .auto-height-iframe {
     border: 1px solid black;
     width: 100%;
