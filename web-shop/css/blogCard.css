@@ -1,3 +1,6 @@
+body {
+    overflow: hidden;
+}
 article {
     padding: 1em;
 }

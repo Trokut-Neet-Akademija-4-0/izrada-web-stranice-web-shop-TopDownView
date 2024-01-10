@@ -32,11 +32,17 @@
     width: 100%;
     padding: 1em;
 }
+form input[type="email"] {
+    width: 33%;
+}
 @media screen and (max-width: 1000px) {
     .proizvodi .galerija iframe,
     .kategorije .galerija iframe {
         width: 50%;
         flex: 0 0 auto;
+    }
+    form input[type="email"] {
+        width: 50%;
     }
 }
 @media screen and (max-width: 500px) {
@@ -48,5 +54,8 @@
     .proizvodi .galerija iframe:last-of-type,
     .kategorije .galerija iframe:last-of-type {
         display: none;
+    }
+    form input[type="email"] {
+        width: 100%;
     }
 }
