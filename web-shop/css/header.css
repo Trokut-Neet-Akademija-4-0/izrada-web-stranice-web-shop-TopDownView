@@ -45,7 +45,7 @@ object .hamburger-menu {
 }
 @media screen and (max-width: 500px) {
     input[type="search"] {
-        width: 9em;
+        width: 8.6em;
     }
     object .logo {
         display: none;

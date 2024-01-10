@@ -52,12 +52,12 @@ header {
     position: sticky;
     top: 0;
 }
-aside iframe {
+aside iframe, .iframe {
     position: sticky;
-    top: calc(104px + 2em);
+    top: calc(104px);
 }
 .auto-height-iframe {
-    border: 1px solid black;
+    border: none;
     width: 100%;
     margin: 0;
     display: block;
