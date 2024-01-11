@@ -1,3 +1,9 @@
+/* Borders */
+.kategorije {
+    border: 4px solid red;
+    margin: 2em 0;
+    padding: 0 2em 2em 2em;
+}
 .kategorije {
     display: flex;
     flex-direction: column;
@@ -8,18 +14,24 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    gap: 1em;
 }
 .kategorije .galerija iframe {
-    width: 25%;
+    width: calc(25% - calc(3 * 1em / 4)); /* 3 x 1em gaps / 4 elements = 0.75em */
     flex: 0 0 auto;
 }
 @media screen and (max-width: 1000px) {
     .kategorije .galerija iframe {
-        width: 50%;
+        width: calc(50% - calc(1 * 1em / 2)); /* 1 x 1em gaps / 2 elements = 0.5em */
         flex: 0 0 auto;
     }
 }
 @media screen and (max-width: 500px) {
+    /* Borders */
+    .kategorije {
+        margin: 1em 0;
+        padding: 0 1em 1em 1em;
+    }
     .kategorije .galerija iframe {
         width: 100%;
         flex: 0 0 auto;
