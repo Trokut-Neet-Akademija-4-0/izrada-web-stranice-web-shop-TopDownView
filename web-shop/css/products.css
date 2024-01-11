@@ -1,3 +1,9 @@
+/* Borders */
+.proizvodi {
+    border: 4px solid red;
+    margin: 2em 0;
+    padding: 0 2em 2em 2em;
+}
 .sadrzaj {
     display: flex;
     flex-direction: row-reverse;
@@ -15,9 +21,10 @@ aside {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1em;
 }
 .galerija iframe {
-    width: 33.3333%;
+    width: calc(33.333333333% - calc(2 * 1em / 3)); /* 2 x 1em gaps / 3 elements = 0.666666666em */
     flex: 0 0 auto;
 }
 @media screen and (max-width: 1000px) {
@@ -28,15 +35,24 @@ aside {
         width: 30vw;
     }
     .galerija iframe {
-        width: 50%;
+        width: calc(50% - calc(1 * 1em / 2)); /* 1 x 1em gaps / 2 elements = 0.5em */
         flex: 0 0 auto;
     }
 }
 @media screen and (max-width: 500px) {
+    /* Borders */
+    .proizvodi {
+        margin: 1em 0;
+        padding: 0 1em 1em 1em;
+    }
     aside {
         display: none;
     }
     .proizvodi {
         width: 100vw;
+    }
+    .galerija iframe {
+        width: 100%;
+        flex: 0 0 auto;
     }
 }
