@@ -1,3 +1,10 @@
+/* Borders */
+.proizvod,
+.recenzije {
+    border: 4px solid red;
+    margin: 2em 0;
+    padding: 0 2em 2em 2em;
+}
 .proizvod {
     display: flex;
     flex-direction: column;
@@ -7,12 +14,16 @@
     display: flex;
     flex-direction: row;
 }
+.slika {
+    padding-bottom: 0.5em;
+}
 .slika img {
     width: 100%;
 }
 .galerija {
     display: flex;
     flex-direction: row;
+    gap: 0.5em;
 }
 .galerija img {
     width: 100%;
@@ -36,20 +47,26 @@
 .recenzije .sadrzaj .lijevo {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 30%;
     padding: 1em;
 }
 .recenzije .sadrzaj .desno {
     padding: 1em;
-    width: 70vw;
+    width: 70%;
 }
 @media screen and (max-width: 500px) {
+    /* Borders */
+    .proizvod,
+    .recenzije {
+        margin: 1em 0;
+        padding: 0 1em 1em 1em;
+    }
     .proizvod .sadrzaj,
     .recenzije .sadrzaj {
         flex-direction: column;
     }
     .recenzije .sadrzaj .lijevo,
     .recenzije .sadrzaj .desno {
-        width: 100vw;
+        width: 100%;
     }
 }
