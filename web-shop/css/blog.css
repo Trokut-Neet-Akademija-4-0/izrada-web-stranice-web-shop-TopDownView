@@ -1,3 +1,13 @@
+/* Borders */
+.blog {
+    border: 4px solid red;
+    margin: 2em 0;
+    padding: 0 2em 2em 2em;
+}
+.pagination {
+    border: 4px solid red;
+    margin: 2em 0;
+}
 .blog {
     display: flex;
     flex-direction: column;
@@ -5,6 +15,9 @@
 }
 .blog .galerija {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 .pagination p img {
     width: 1em;
@@ -14,4 +27,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+@media screen and (max-width: 500px) {
+    /* Borders */
+    .blog {
+        margin: 1em 0;
+        padding: 0 1em 1em 1em;
+    }
+    .pagination {
+        margin: 1em 0;
+    }
 }
