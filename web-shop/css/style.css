@@ -46,6 +46,14 @@ aside iframe,
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
 }
+.main-card a:link,
+.main-card a:visited {
+    color: var(--main-text-color);
+    text-decoration: underline;
+}
+.main-card a:hover {
+    text-decoration: underline;
+}
 .secondary-card {
     background-color: var(--secondary-bg-color);
     color: var(--secondary-text-color);
