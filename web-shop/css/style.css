@@ -25,7 +25,8 @@ h4 {
     font-family: var(--secondary-font);
     font-weight: 700;
 }
-/* Privremeni borderi */
+/* Temp borders */
+/*
 body,
 section,
 article,
@@ -34,17 +35,12 @@ aside,
 form {
     border: 1px solid black;
 }
-/* Borders */
-header,
-footer,
-aside iframe,
-.iframe {
-    border: 4px solid red;
-}
+*/
 /* Card styles (excluding iframe Cards) */
 .main-card {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
+    border: 4px solid var(--secondary-bg-color);
 }
 .main-card a:link,
 .main-card a:visited {
@@ -69,11 +65,16 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 4px solid var(--secondary-bg-color);
+}
+footer {
+    border-bottom: 4px solid var(--secondary-bg-color);
 }
 aside iframe,
 .iframe {
     position: sticky;
-    top: calc(104px);
+    top: calc(100px);
+    border-bottom: 4px solid var(--secondary-bg-color);
 }
 .auto-height-iframe {
     border: none;
