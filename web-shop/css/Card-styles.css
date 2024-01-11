@@ -1,0 +1,14 @@
+/* Colors */
+body {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+}
+/* Link styling */
+a:link,
+a:visited {
+    color: var(--secondary-text-color);
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: underline;
+}

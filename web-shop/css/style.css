@@ -41,6 +41,15 @@ aside iframe,
 .iframe {
     border: 4px solid red;
 }
+/* Card styles (excluding iframe Cards) */
+.main-card {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+.secondary-card {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+}
 /* Ostalo */
 * {
     box-sizing: border-box;
