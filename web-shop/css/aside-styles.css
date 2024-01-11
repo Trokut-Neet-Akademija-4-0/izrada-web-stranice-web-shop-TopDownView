@@ -1,0 +1,5 @@
+/* Colors */
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
