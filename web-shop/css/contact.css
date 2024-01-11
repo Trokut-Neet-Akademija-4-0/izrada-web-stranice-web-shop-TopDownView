@@ -1,21 +1,17 @@
-main {
-    display: flex;
-    flex-direction: row;
+/* Borders */
+.kontakt,
+.info {
+    border: 4px solid red;
+    margin: 2em 0;
+    padding: 0 2em 2em 2em;
 }
-.left,
-.right {
-    width: 50vw;
-}
-.left .kontakt,
-.right .info {
+.kontakt,
+.info {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.left .sadrzaj {
-    padding: 1em;
-}
-.right .info .sadrzaj {
+.info .sadrzaj {
     width: 100%;
 }
 img {
@@ -34,12 +30,10 @@ textarea {
     }
 }
 @media screen and (max-width: 500px) {
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-    .left,
-    .right {
-        width: 100vw;
+    /* Borders */
+    .kontakt,
+    .info {
+        margin: 1em 0;
+        padding: 0 1em 1em 1em;
     }
 }
