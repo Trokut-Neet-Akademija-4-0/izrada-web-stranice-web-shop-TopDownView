@@ -1,3 +1,28 @@
+/* Input field styling */
+input,
+textarea,
+input[type="checkbox"] {
+    outline: none;
+    border-radius: 0;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    border-radius: 0;
+    border: 2px solid var(--secondary-bg-color);
+}
+/* Button styling */
+input[type="submit"] {
+    font-weight: 700;
+    border-radius: 0;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: var(--secondary-bg-color);
+}
 /* Borders */
 .kontakt,
 .info {
