@@ -54,7 +54,7 @@ form {
     background-color: var(--secondary-bg-color);
     color: var(--secondary-text-color);
 }
-/* Ostalo */
+/* Positioning */
 * {
     box-sizing: border-box;
 }
