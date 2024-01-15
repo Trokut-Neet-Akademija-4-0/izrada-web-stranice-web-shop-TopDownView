@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pocetna</title>
+        <script src="/js/javascript.js"></script>
+        <link rel="stylesheet" href="css/body-width.css">
+        <link rel="stylesheet" href="css/background.css">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/pocetna.css" />
+    </head>
+    <body>
+        <header>
+            <iframe
+                src="partials/header.html"
+                width="100%"
+                class="auto-height-iframe"
+            ></iframe>
+        </header>
+        <main>
+            <section class="dobrodosli main-card">
+                <h1>Dobrodosli!</h1>
+            </section>
+            <section class="proizvodi main-card">
+                <h1>Popularni proizvodi</h1>
+                <div class="galerija">
+                    <iframe
+                        src="partials/productCard.html"
+                        width="100%"
+                        class="auto-height-iframe"
+                    ></iframe>
+                    <iframe
+                        src="partials/productCard.html"
+                        width="100%"
+                        class="auto-height-iframe"
+                    ></iframe>
+                    <iframe
+                        src="partials/productCard.html"
+                        width="100%"
+                        class="auto-height-iframe"
+                    ></iframe>
+                    <iframe
+                        src="partials/productCard.html"
+                        width="100%"
+                        class="auto-height-iframe"
+                    ></iframe>
+                </div>
+            </section>
+            <section class="kategorije main-card">
+                <h1>Popularne kategorije</h1>
+                <div class="galerija">
+                    <iframe
+                        src="partials/categoryCard.html"
+                        width="100%"
+                        class="auto-height-iframe"
+                    ></iframe>
+                    <iframe
+                        src="partials/categoryCard.html"
+                        width="100%"
+                        class="auto-height-iframe"
+                    ></iframe>
+                    <iframe
+                        src="partials/categoryCard.html"
+                        width="100%"
+                        class="auto-height-iframe"
+                    ></iframe>
+                    <iframe
+                        src="partials/categoryCard.html"
+                        width="100%"
+                        class="auto-height-iframe"
+                    ></iframe>
+                </div>
+            </section>
+            <section class="blog main-card">
+                <h1>Blog</h1>
+                <iframe
+                    src="/partials/blogCard2.html"
+                    width="100%"
+                    class="auto-height-iframe"
+                ></iframe>
+            </section>
+            <section class="newsletter main-card">
+                <h1>Newsletter</h1>
+                <div class="newsletter-body secondary-card">
+                    <h3>Pretplati se na novosti i akcije!</h3>
+                    <form action="">
+                        <p>
+                            <input
+                                type="email"
+                                name="email"
+                                id=""
+                                placeholder="Upisite svoj mail"
+                                required
+                            />
+                        </p>
+                        <p>
+                            <input
+                                type="checkbox"
+                                name="privola"
+                                id=""
+                                required
+                            />
+                            <label for="privola"
+                                >Prihvacam prikupljanje i obradu osobnih
+                                podataka danih u obrascu bez kojih moj zahtjev
+                                ne moze biti ispunjen, te da me Pet Shop
+                                kontaktira u svrhu slanja obavijesti</label
+                            >
+                        </p>
+                        <p>
+                            <input type="checkbox" name="prijava" id="" />
+                            <label for="prijava"
+                                >Prijavi se na newsletter</label
+                            >
+                        </p>
+                        <p>
+                            <input type="submit" value="Pretplati se" />
+                        </p>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <iframe
+                src="partials/footer.html"
+                width="100%"
+                class="auto-height-iframe"
+            ></iframe>
+        </footer>
+    </body>
+</html>
