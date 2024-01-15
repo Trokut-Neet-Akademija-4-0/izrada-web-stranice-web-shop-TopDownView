@@ -2,6 +2,7 @@
 input,
 textarea,
 input[type="checkbox"] {
+    accent-color: var(--secondary-bg-color);
     outline: none;
     border-radius: 0;
     border: 2px solid black;
