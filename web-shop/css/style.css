@@ -1,9 +1,16 @@
-/* Import */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap");
+/* Fonts */
+@font-face {
+    font-family: "Nunito-Regular";
+    src: url(../fonts/Nunito/static/Nunito-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
 /* CSS Variables */
 :root {
-    --main-font: "Nunito", sans-serif;
-    --secondary-font: "Roboto", sans-serif;
+    --main-font: "Nunito-Regular", sans-serif;
+    --secondary-font: "Roboto-Bold", sans-serif;
     --main-text-color: #ffffff;
     --secondary-text-color: #3c3c3c;
     --main-bg-color: #007270;
@@ -15,7 +22,6 @@ input,
 button,
 textarea {
     font-family: var(--main-font);
-    font-weight: 400;
     font-size: 1em;
 }
 h1,
@@ -23,7 +29,6 @@ h2,
 h3,
 h4 {
     font-family: var(--secondary-font);
-    font-weight: 700;
 }
 /* Temp borders */
 /*
