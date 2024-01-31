@@ -12,13 +12,22 @@
         <link rel="preload" href="css/style.css" as="style" />
         <link rel="preload" href="css/about.css" as="style" />
 
+        <!-- Preloading LCP image-->
+        <link
+            rel="preload"
+            fetchpriority="high"
+            href="images/Placeholder.webp"
+            type="image/webp"
+            as="image"
+        />
+
         <script src="js/javascript.js"></script>
         <link rel="stylesheet" href="css/body-width.css">
         <link rel="stylesheet" href="css/background.css">
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/about.css" />
     </head>
-    <body>
+    <bodystylesheet>
         <header>
             <iframe
                 src="partials/header.html"
