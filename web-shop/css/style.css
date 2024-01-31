@@ -3,13 +3,11 @@
     font-family: "Nunito-Regular";
     src: url(../fonts/Nunito/static/Nunito-Regular.ttf);
     font-display: swap;
-    unicode-range: U+0100-017F;
 }
 @font-face {
     font-family: "Roboto-Bold";
     src: url(../fonts/Roboto/Roboto-Bold.ttf);
     font-display: swap;
-    unicode-range: U+0100-017F;
 }
 /* CSS Variables */
 :root {
