@@ -34,7 +34,7 @@ input[type="submit"]:hover {
 }
 .dobrodosli {
     height: 50vh;
-    background-image: url(../images/Placeholder.png);
+    background-image: url(../images/Placeholder.webp);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
